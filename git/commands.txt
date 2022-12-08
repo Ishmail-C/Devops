@@ -79,8 +79,38 @@ tracking files
 	git rm files
 	git rm --cached files
 	
+clone a specific branch from git-hub
+	git clone -b <branch_name> --single-branch <repo_link>
 
+pull only last commit from particular branch
+	git clone -b <branch_name> --single-branch --depth=1 <repo_link>
 
+git-hub repo link
+	git remote -v
+
+git fetch = It'll get repo's meta-data
+git pull = git_fetch + git_merge
+
+commited 4 files and remove one file from stage area
+	touch a b c d
+	git add .
+	git status
+	git rm --cached <file_name_to_remove>
+	git status
+
+commited and pushed to repo. how to undo this.
+	git log --oneline
+	#copy bad commit_ID
+	git revert <commit_id>
+	git push
+
+create branch make it current working branch in single command
+	git checkout -b <new_branch_name>
+
+cherry-pick
+	#copy selective commit id
+	#move to destination branch
+	git cherry-pick <commit_id>
 
 
   159  git init
