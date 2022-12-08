@@ -18,7 +18,7 @@ version
 initialization
 	git init
 
-un-initialization
+un-initialization/disabling git
 	rm -rf .git
 
 creat
