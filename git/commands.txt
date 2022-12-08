@@ -1,70 +1,104 @@
-  155  mv git/ Devops_git_repo
-  156  mv Devops_git_repo/ devops_git_repo
-  157  cd devops_git_repo/
-  158  git status
+-------------------------------------------------------------------------------------------------------------------------------
+|create |	browse    |	change		    |	revert	   |	update	  |	branch	   |	commit	  |	push  |
+-------------------------------------------------------------------------------------------------------------------------------
+|init	|	status	  |	make_changes	    |	reset      |	pull	  |	checkout   |	commit	  |	push  |
+|clone	|	log	  |	to_be_respected	    |	checkout   |	fetch	  |	branch     |		  |	format|
+|	|	blame	  |	by_commit:add	    |	revert	   |	merge	  |		   |		  |	push  |
+|	|	show	  |			    |		   |	am	  |		   |		  |	      |
+|	|	diff	  |			    |		   |		  |		   |		  |	      |
+-------------------------------------------------------------------------------------------------------------------------------
+
+installation
+	yum install git
+	yum install git-all
+
+version
+	git version
+
+initialization
+	git init
+
+un-initialization
+	rm -rf .git
+
+creat
+		git init
+		git add .
+	from existing repo
+		git clone ~/old ~/new
+		git clone git://..
+		git clone ssh://..
+
+view
+	git status
+	git diff <commit_id_1> <commit_id_2>
+	git log
+	git log --oneline
+	git blame (file)
+	git show id
+	git show id:(file)
+	git branch -a
+	git tag -l
+
+git revert
+	in git, revert usually describes a new commit that undoes previous commit
+		git reset --hard
+		git revert <branch>
+		git commit -a --amend
+		git checkout <id/file>
+
+publish
+	in git, commit only respects changes that have been marked explicitly add
+		git commit -a
+		git format -patch origin
+		git push remote
+		git log foo
+
+update
+	git fetch
+	git fetch <remote>
+	git pull
+
+branch
+	git checkout branch
+	git merge branch
+	git branch <branch_name>
+	git checkout -b <branch_name>
+
+conflicts
+	use add mark files as resolved
+		git diff [--base]
+		git diff --ours
+		git diff --theirs
+		git log --merge
+		gitk --merge
+
+tracking files
+	git add files
+	git mv old new
+	git rm files
+	git rm --cached files
+	
+
+
+
+
   159  git init
   160  git status
   161  git clone https://github.com/Ishmail-C/Devops.git
-  162  ls
-  163  cd Devops/
-  164  ls
-  165  cat README.md 
   166  for i in linux git jenkins docker kubernetes ansible terraform; do mkdir $i && touch $i/Readme.md; done
-  167  ls
-  168  cd ansible/
-  169  ls
-  170  cd ..
-  171  git status
-  172  git add .
-  173  git commit -m "file structure created"
   174  git config --global user.email "ishmail93@gmail.com"
   175  git config --global user.name "ishmail-c"
   176  git commit -m "file structure created"
-  177  git status
-  178  git push
-  179  git status
-  180  git push
-  181  git status
   182  git branch Ishmail
   183  git branch -a
   184  git switch Ishmail
-  185  ls
-  186  git status
-  187  git push
   188  git push --set-upstream origin Ishmail
-  189  git branches
-  190  git branche -a
-  191  git branch -a
   192  git origine -v
-  193  vim ~/.gitconfig 
-  194  vim ~/.git-credentials
-  195  git push
-  196  git config credential.helper -store
-  197  vim ~/.git-credentials
-  198  git push
-  199  git config credential-store
-  200  git push
-  201  git --help
-  202  git config credential.helper store
-  203  git push https://github.com/Ishmail-C/Devops.git
-  204  git push
-  205  git remote -v
-  206  cd git/
-  207  ls
-  208  touch a b c d
-  209  git add .
-  210  git status
-  211  git commit -m "practice git cached"
-  212  git push
-  213  git status
-  214  git log
+  196  git config credential.helper store
   215  git log --oneline
   216  git revert dab764b
   217  git log --oneline
-  218  git push
-  219  git status
-  220  git log --oneline
-  221  git status
   222  touch a b c d
   223  git add .
   224  git status
@@ -72,51 +106,22 @@
   226  git status
   227  git push
   228  git commit -m "git cached except one file"
-  229  git push
-  230  git log --oneline
-  231  git status
-  232  git reset --hard HARD~1
   233  git reset --hard HEAD~1
   234  git log --oneline
-  235  git push
-  236  git status
   237  git add c
   238  git commit -m "added skiped file"
   239  git push
   240  git pull https://github.com/Ishmail-C/Devops.git
   241  git remote -v
-  242  git pull
-  243  git status
-  244  git log --oneline
-  245  git status
-  246  git add c
-  247  git status
-  248  git push
-  249  git status
-  250  git log -oneline
-  251  git log --oneline
   252  git revert 398b36a
   253  git revert -m 398b36a
   254  git revert 4f58d60
-  255  git status
-  256  git log --oneline
-  257  git push
-  258  git log --oneline
-  259  git status
-  260  ls
   261  rm -rf a b d
-  262  ls
-  263  git push
-  264  git status
   265  git add .
   266  git commit -m "files are deleted"
   267  git push
   268  git log --oneline
   269  git revert 341ecd9
-  270  git status
-  271  git push
-  272  git status
-  273  ls
   274  touch c
   275  ls
   276  git add c
@@ -125,14 +130,6 @@
   279  git status
   280  git stash list
   281  git stash apply
-  282  git status
-  283  git stash 
-  284  git status
-  285  git restore --staged 
-  286  git stash list
-  287  git stash apply
-  288  git restore --staged c
-  289  git status
   290  git add c
   291  git commit -m "skipped file staged"
   292  git status
@@ -141,7 +138,6 @@
   295  git commit -m "skipped file staged"
   296  git status
   297  git reset  HEAD~1
-  298  git status
   299  git add c
   300  git commit -m "skipped file staged"
   301  git reset --hard HEAD~1
@@ -151,16 +147,9 @@
   305  git add c
   306  git status
   307  git rm --cached c
-  308  git status
-  309  git stash 
-  310  git status
-  311  git add c
-  312  git stash 
-  313  git status
   314  git stash list
   315  git stash apply
   316  git switch main
-  317  ls
   318  git branch -a
   319  git switch Ishmail
   320  git status
@@ -175,8 +164,6 @@
   329  git log --oneline
   330  git commit -m "skipped file staged"
   331  git status
-  332  git push
-  333  git status
   334  history 
   335  history | tail -200 > git commands.txt
   336  history | tail -200 > commands.txt
