@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+        stages{
+            stage('System details'){
+                steps{
+                    sh 'uname -a'
+                }
+            }
+            stage('Memory details'){
+                steps{
+                    sh 'free'
+                }
+            }
+            stage('CPU details'){
+                steps{
+                    sh 'lscpu'
+                }
+            }
+            stage('Disk details'){
+                steps{
+                    sh 'df -h | tail -5'
+                }
+            }
+        }
+}

@@ -1,0 +1,44 @@
+// Jenkins master is Centos:9 job done in node machine ubuntu. Because Master supports only podman instead of docker.
+//1. Create pipeline job in jenkins
+//2. Configure Node machine.
+//3. Node machine should have docker
+//3. Place below code in pipline - pipline script
+
+pipeline {
+    agent any
+    stages {
+        stage('node') {
+            agent {
+                label 'Ubuntu' //Ubuntu is label of node machine.
+            }
+            steps {
+                sh '''
+                echo "Docker integration from Jenkins"
+                echo "-------------------------------"
+                echo "Jenkins Node IP:`hostname -I`" > log.txt
+                echo "Node-Memory Details:\n" >> log.txt
+                free >> log.txt
+                docker image pull alpine >> log.txt
+                echo "Alpine Image Pulled"
+                docker container run -d --name test -p 9000:80 alpine >> log.txt
+                echo "Container created with alpine"
+                echo "------------------------------------------"
+                echo "                Report                    "
+                echo "------------------------------------------"
+                echo "Image name : alpine:latest"
+                echo "Container name : test"
+                echo "Port number : 9000"
+                echo "Container Up and Running!!!"
+                echo "------------------------------------------"
+                docker container stop test
+                echo "Container stoped"
+                docker rm test
+                echo "Container removed from docker"
+                echo "copying backup of this build to master"
+
+                '''
+            }
+        }
+    }
+}
+

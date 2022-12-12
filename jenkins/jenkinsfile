@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('testing'){
+            steps{
+		sh '''
+		echo "Hello Jenkins"
+		echo -e "Git intigrated with Jenkins"
+		echo `uname`
+		echo `hostname -I`
+		'''	
+            }
+        }
+    }   
+}
