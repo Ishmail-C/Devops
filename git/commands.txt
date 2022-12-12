@@ -1,0 +1,199 @@
+-------------------------------------------------------------------------------------------------------------------------------
+|create |	browse    |	change		    |	revert	   |	update	  |	branch	   |	commit	  |	push  |
+-------------------------------------------------------------------------------------------------------------------------------
+|init	|	status	  |	make_changes	    |	reset      |	pull	  |	checkout   |	commit	  |	push  |
+|clone	|	log	  |	to_be_respected	    |	checkout   |	fetch	  |	branch     |		  |	format|
+|	|	blame	  |	by_commit:add	    |	revert	   |	merge	  |		   |		  |	push  |
+|	|	show	  |			    |		   |	am	  |		   |		  |	      |
+|	|	diff	  |			    |		   |		  |		   |		  |	      |
+-------------------------------------------------------------------------------------------------------------------------------
+
+installation
+	yum install git
+	yum install git-all
+
+version
+	git version
+
+initialization
+	git init
+
+un-initialization/disabling git
+	rm -rf .git
+
+creat
+		git init
+		git add .
+	from existing repo
+		git clone ~/old ~/new
+		git clone git://..
+		git clone ssh://..
+
+view
+	git status
+	git diff <commit_id_1> <commit_id_2>
+	git log
+	git log --oneline
+	git blame (file)
+	git show id
+	git show id:(file)
+	git branch -a
+	git tag -l
+
+git revert
+	in git, revert usually describes a new commit that undoes previous commit
+		git reset --hard
+		git revert <branch>
+		git commit -a --amend
+		git checkout <id/file>
+
+publish
+	in git, commit only respects changes that have been marked explicitly add
+		git commit -a
+		git format -patch origin
+		git push remote
+		git log foo
+
+update
+	git fetch
+	git fetch <remote>
+	git pull
+
+branch
+	git checkout branch
+	git merge branch
+	git branch <branch_name>
+	git checkout -b <branch_name>
+
+conflicts
+	use add mark files as resolved
+		git diff [--base]
+		git diff --ours
+		git diff --theirs
+		git log --merge
+		gitk --merge
+
+tracking files
+	git add files
+	git mv old new
+	git rm files
+	git rm --cached files
+	
+clone a specific branch from git-hub
+	git clone -b <branch_name> --single-branch <repo_link>
+
+pull only last commit from particular branch
+	git clone -b <branch_name> --single-branch --depth=1 <repo_link>
+
+git-hub repo link
+	git remote -v
+
+git fetch = It'll get repo's meta-data
+git pull = git_fetch + git_merge
+
+commited 4 files and remove one file from stage area
+	touch a b c d
+	git add .
+	git status
+	git rm --cached <file_name_to_remove>
+	git status
+
+commited and pushed to repo. how to undo this.
+	git log --oneline
+	#copy bad commit_ID
+	git revert <commit_id>
+	git push
+
+create branch make it current working branch in single command
+	git checkout -b <new_branch_name>
+
+cherry-pick
+	#copy selective commit id
+	#move to destination branch
+	git cherry-pick <commit_id>
+
+
+  159  git init
+  160  git status
+  161  git clone https://github.com/Ishmail-C/Devops.git
+  166  for i in linux git jenkins docker kubernetes ansible terraform; do mkdir $i && touch $i/Readme.md; done
+  174  git config --global user.email "ishmail93@gmail.com"
+  175  git config --global user.name "ishmail-c"
+  176  git commit -m "file structure created"
+  182  git branch Ishmail
+  183  git branch -a
+  184  git switch Ishmail
+  188  git push --set-upstream origin Ishmail
+  192  git origine -v
+  196  git config credential.helper store
+  215  git log --oneline
+  216  git revert dab764b
+  217  git log --oneline
+  222  touch a b c d
+  223  git add .
+  224  git status
+  225  git rm --cached c
+  226  git status
+  227  git push
+  228  git commit -m "git cached except one file"
+  233  git reset --hard HEAD~1
+  234  git log --oneline
+  237  git add c
+  238  git commit -m "added skiped file"
+  239  git push
+  240  git pull https://github.com/Ishmail-C/Devops.git
+  241  git remote -v
+  252  git revert 398b36a
+  253  git revert -m 398b36a
+  254  git revert 4f58d60
+  261  rm -rf a b d
+  265  git add .
+  266  git commit -m "files are deleted"
+  267  git push
+  268  git log --oneline
+  269  git revert 341ecd9
+  274  touch c
+  275  ls
+  276  git add c
+  277  git status
+  278  git stash 
+  279  git status
+  280  git stash list
+  281  git stash apply
+  290  git add c
+  291  git commit -m "skipped file staged"
+  292  git status
+  293  git reset --soft HEAD~1
+  294  git status
+  295  git commit -m "skipped file staged"
+  296  git status
+  297  git reset  HEAD~1
+  299  git add c
+  300  git commit -m "skipped file staged"
+  301  git reset --hard HEAD~1
+  302  git status
+  303  ls
+  304  touch c
+  305  git add c
+  306  git status
+  307  git rm --cached c
+  314  git stash list
+  315  git stash apply
+  316  git switch main
+  318  git branch -a
+  319  git switch Ishmail
+  320  git status
+  321  git rm --cached c
+  322  git status
+  323  git switch Ishmail
+  324  git switch main
+  325  git branch -a
+  326  git checkout Ishmail
+  327  git status
+  328  git add c
+  329  git log --oneline
+  330  git commit -m "skipped file staged"
+  331  git status
+  334  history 
+  335  history | tail -200 > git commands.txt
+  336  history | tail -200 > commands.txt
