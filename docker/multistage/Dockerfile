@@ -1,15 +1,12 @@
-FROM centos:7 AS system
-ENV user=Ishmail_CS
-RUN yum install httpd -y
-COPY entrypoint.sh /
-RUN chmod 777 /entrypoint.sh
-ENTRYPOINT [ "/entrypoint.sh" ]
+FROM alpine AS apache
+RUN apk add apache2 && apk add openrc
+EXPOSE 80
+COPY index.html /var/www/localhost/htdocs/
+COPY index.html /tmp/git/
+ENTRYPOINT ["/bin/sh","-c","httpd && sh"]
 
-FROM centos:7 as git
-RUN yum installgit-y
 
-FROM centos:7 as jenk
-RUN yum installopenjdk-y;yuminstalljenkins-y
-
-FROM centos:7 AS docker
-RUN yum install docker -y
+FROM alpine AS git
+RUN apk add git
+COPY --from=apache /var/www/localhost/htdocs .
+CMD git version && /bin/sh
