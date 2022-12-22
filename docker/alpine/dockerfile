@@ -3,4 +3,5 @@ RUN apk add apache2 && apk add openrc
 EXPOSE 80
 COPY index.html /var/www/localhost/htdocs/
 WORKDIR /var/www/localhost/htdocs/
-CMD httpd && /bin/sh
+ENTRYPOINT ["/bin/sh","-c","httpd && sh"]
+#CMD httpd && /bin/sh
