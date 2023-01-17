@@ -1,0 +1,10 @@
+---
+- hosts: webserver
+  become: yes
+  gather_facts: false
+  tasks:
+    - name: file copy from source to destination
+      copy:
+        src: /opt/index.html
+        dest: /var/www/html/
+
