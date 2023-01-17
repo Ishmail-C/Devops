@@ -1,4 +1,4 @@
-Project name: Website_hosting
+Project name: Website_hosting_with_AWS
 
 agenda: Developer develop code push into shared repository
 	Jenkins fetch the code from share repository and sync to ansible server
