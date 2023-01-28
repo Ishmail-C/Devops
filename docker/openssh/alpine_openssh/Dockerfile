@@ -4,6 +4,7 @@ WORKDIR /home/container/
 COPY entrypoint.sh /home/container/
 RUN apk add apache2 && apk add openrc && apk add bash && apk add openrc openssh && chmod 777 /home/container/entrypoint.sh
 EXPOSE 80
+EXPOSE 22
 
 ARG ssh_pub_key
 RUN mkdir -p /root/.ssh \
