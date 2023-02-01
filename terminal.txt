@@ -1,0 +1,551 @@
+    1  passwd
+    2  exit
+    3  ls
+    4  unzip ngrok-v3-stable-linux-amd64.tgz 
+    5  ls
+    6  apt install zip
+    7  apt install unzip
+    8  unzip ngrok-v3-stable-linux-amd64.tgz 
+    9  ls
+   10  tar -xzvf ngrok-v3-stable-linux-amd64.tgz 
+   11  ls
+   12  mv ngrok /usr/bin/
+   13  ngrok  http 80
+   14  ngrok config add-authtoken 2KrTMN2GtRxOMMnUfxyq9n1rgM7_4vUqEGipzoU7mCD5Z8A2d
+   15  ngrok http 80
+   16  exit
+   17  ls
+   18  cd Downloads/
+   19  vim install.sh
+   20  apt install vim
+   21  vim install.sh
+   22  bash install.sh 
+   23  cat /var/lib/jenkins/secrets/initialAdminPassword
+   24  sudo apt update
+   25  sudo apt upgrade
+   26  sudo apt install software-properties-common apt-transport-https wget
+   27  wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+   28  sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"
+   29  sudo apt update
+   30  sudo apt install microsoft-edge-stable
+   31  microsoft-edge --version
+   32  sudo apt install microsoft-edge-beta
+   33  sudo apt remove microsoft-edge-beta
+   34  exit
+   35  lsblk
+   36  ping www.google.com
+   37  hostname -I
+   38  hostname -i
+   39  hostnamectl 
+   40  ls
+   41  cd Downloads/
+   42  ls
+   43  dpkg -i skypeforlinux-64.deb 
+   44  lsb-release -I
+   45  lsb-release -i
+   46  lsb_release -i
+   47  hostnamectl 
+   48  gsettings set com.canonical.Unity.Launcher launcher-position Top
+   49  sudo apt-get install unity-tweak-tool
+   50  sudo apt-get remove unity-tweak-tool
+   51  sudo apt install gnome-tweaks
+   52  sudo apt remove gnome-tweaks
+   53  sudo apt update
+   54  sudo apt install snapd
+   55  sudo snap install whatsapp-for-linux
+   56  sudo snap remove whatsapp-for-linux
+   57  apt update
+   58  apt upgrade
+   59  apt list --upgradable
+   60  apt install $(apt list --upgradable | grep gnome-remote-desktop)
+   61  apt list --upgradable | grep gnome-remote-desktop
+   62  apt install gnome-remote-desktop
+   63  apt install update-notifier-common
+   64  apt list --upgradable
+   65  apt install update-notifier
+   66  apt list --upgradable
+   67  apt upgrade snap
+   68  apt upgrade snap store
+   69  exit
+   70  apt update snap/
+   71  apt --upgradable
+   72  apt man
+   73  man apt
+   74  history
+   75  sudo apt update
+   76  sudo apt upgrade -y
+   77  sudo apt install software-properties-common apt-transport-https wget
+   78  wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add 
+   79  sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+   80  sudo apt install code
+   81  sudo apt update && sudo apt upgrade -y
+   82  exit
+   83  lsblk
+   84  exit
+   85  dpkg -i 4kvideodownloader_4.23.0-1_amd64.deb 
+   86  exit
+   87  ls
+   88  cd Downloads/
+   89  ls
+   90  ls -lah
+   91  chmod 777 VMware-Player-Full-16.2.4-20089737.x86_64.bundle 
+   92  ls -lah
+   93  ./VMware-Player-Full-16.2.4-20089737.x86_64.bundle 
+   94  cd /usr/bin/
+   95  ls
+   96  mkdir VMware-Player
+   97  sudo vmware-networks --stop
+   98  sudo vmware-usbarbitrator --stop
+   99  sudo vmware-networks --stop
+  100  sudo vmware-usbarbitrator --stop
+  101  sudo vmware-installer -u vmware-player
+  102  udo rm -rf /etc/vmware
+  103  sudo rm -rf /etc/vmware
+  104  sudo rm -rf /usr/lib/vmware
+  105  sudo rm /usr/share/applications/vmware-player.desktop
+  106  cd
+  107  pwd
+  108  cd /home/ishmail/
+  109  ls
+  110  cd Downloads/
+  111  lls
+  112  ls
+  113  rm -rf VMware-Player-Full-16.2.4-20089737.x86_64.bundle 
+  114  ls
+  115  exit
+  116  ls
+  117  mkdir linux_vmware
+  118  cd ..
+  119  ls
+  120  cd F
+  121  ls
+  122  mkdir linux_vmware
+  123  exit
+  124  cd Downloads/
+  125  ls
+  126  chmod 777 VMware-Workstation-Full-17.0.0-20800274.x86_64.bundle 
+  127  ls
+  128  ./VMware-Workstation-Full-17.0.0-20800274.x86_64.bundle 
+  129  vmware
+  130  cd /mnt/
+  131  ls
+  132  cd /usr/
+  133  cd bin/
+  134  ls
+  135  vmware
+  136  ls
+  137  cd /home/ishmail/Downloads/
+  138  ls
+  139  ./VMware-Workstation-Full-17.0.0-20800274.x86_64.bundle 
+  140  vmware help
+  141  vmware --help
+  142  vmware --version
+  143  find / -name vmware
+  144  vmware
+  145  sudo apt install build-essential
+  146  ls
+  147  cd /usr/bin/
+  148  ls
+  149  cd X11
+  150  ls
+  151  cd X11/
+  152  ls
+  153  cd X11/
+  154  ls
+  155  cd X11/
+  156  ls
+  157  exit
+  158  apt install build-essential
+  159  sudo vmware-networks --stop
+  160  sudo vmware-usbarbitrator --stop
+  161  sudo vmware-installer -u vmware-workstation
+  162  sudo rm -rf /etc/vmware
+  163  sudo rm -rf /usr/lib/vmware
+  164  sudo rm /usr/share/applications/vmware-workstation.desktop
+  165  sudo rm -rf /etc/vmware-installer/
+  166  sudo rm -rf /etc/vmware-vix/
+  167  find / -name vmware
+  168  rm -rf /var/log/vmware
+  169  find / -name vmware
+  170  rm -rf /home/ishmail/.cache/vmware/
+  171  find / -name vmware
+  172  rm -rf /snap/core20/1587/usr/lib/python3/dist-packages/cloudinit/sources/helpers/vmware/
+  173  rm -rf /usr/lib/python3/dist-packages/ansible_collections/vmware/
+  174  rm -rf /usr/lib/python3/dist-packages/ansible_collections/community/vmware/
+  175  rm -rf /snap/core18/2667/usr/lib/python3/dist-packages/cloudinit/sources/helpers/vmware/
+  176  rm -rf /snap/core20/1778/usr/lib/python3/dist-packages/cloudinit/sources/helpers/vmware/
+  177  find / -name vmware
+  178  find / -name vmwarectl
+  179  find / -name vmwarectrl
+  180  cd /usr/bin/vmwarectrl 
+  181  rm -rf /usr/bin/vmwarectrl 
+  182  sudo apt-get install wine
+  183  cd /media/
+  184  ls
+  185  cd ishmail/
+  186  ls
+  187  cd FA14DDA214DD61E5/
+  188  ls
+  189  cd Users/ishma/Downloads/
+  190  ls
+  191  wine VMware-workstation-full-17.0.0-20800274.exe 
+  192  apt install build-essential
+  193  wine VMware-workstation-full-17.0.0-20800274.exe 
+  194  ls
+  195  exit
+  196  mkdir vmware_path
+  197  ./VMware-Workstation-Full-17.0.0-20800274.x86_64.bundle 
+  198  cd Downloads/
+  199  ls
+  200  ./VMware-Workstation-Full-17.0.0-20800274.x86_64.bundle 
+  201  apt install build-essential
+  202  ./VMware-Workstation-Full-17.0.0-20800274.x86_64.bundle 
+  203  cd /media/
+  204  ls
+  205  cd ishmail/
+  206  ls
+  207  cd F/
+  208  ls
+  209  mkdir Ishmail
+  210  ls -lah
+  211  exit
+  212  mount -o remount,rw /
+  213  mount -o remount,ro /
+  214  mount -o remount,rw /
+  215  exit
+  216  mount -o remount,rw /
+  217  mount -o remount,ro /
+  218  mount -o remount,rw /
+  219  mount -o remount,ro /
+  220  mount -o remount,rw /
+  221  reboot
+  222  mount -o remount,rw / && reboot
+  223  cd /media/ishmail/F
+  224  cd /media/ishmail/
+  225  ls
+  226  cd /media/ishmail/F
+  227  ls
+  228  mkdir ishmail
+  229  cd ..
+  230  ls
+  231  udo umount /media/ishmail/F
+  232  sudo umount /media/ishmail/F
+  233  sudo umount /media/ishmail/E
+  234  sudo umount /media/ishmail/D
+  235  sudo umount /media/ishmail/FA14DDA214DD61E5
+  236  ls
+  237  sudo mount -o remount,rw /media/ishmail/FA14DDA214DD61E5
+  238  ls
+  239  sudo mount -o remount,rw /media/ishmail/FA14DDA214DD61E5
+  240  sudo mount -o remount,rw /media/ishmail/F
+  241  sudo mount -o remount,rw /media/ishmail/E
+  242  sudo mount -o remount,rw /media/ishmail/D
+  243  ls
+  244  df -h
+  245  ls
+  246  cd F
+  247  ls
+  248  mkdir Ishmail
+  249  touch hi.txt
+  250  exit
+  251  grep -r "Nokia" /home/ishmail/
+  252  grep -ri "high flo" /home/ishmail/
+  253  grep -r "high flo" /home/ishmail/Downloads/
+  254  grep -r "notebook" /home/ishmail/Downloads/
+  255  cat /home/ishmail/Downloads/a.txt 
+  256  grep -r "High flo" /home/ishmail/Downloads/
+  257  grep -r "Hight flo" /home/ishmail/Downloads/
+  258  grep -ri "hight flo" /home/ishmail/Downloads/
+  259  /usr/bin/vmware-uninstall .vmware/
+  260  /usr/bin/vmware-uninstall*
+  261  /usr/bin/vmware-installer --list-products
+  262  /usr/bin/vmware-installer --uninstall-vmware-workstation
+  263  apt remove vmware-workstation
+  264  vmware-installer -l
+  265  vmware-installer --uninstall vmware-workstation
+  266  vmware-installer --uninstall-vmware-workstation
+  267  sudo /usr/bin/vmware-uninstall-workstation.pl
+  268  /usr/bin/vmware-uninstall-workstation.pl
+  269  vmware-installer -u vmware-workstation
+  270  cd /usr/bin/
+  271  ls
+  272  vmware-installer -u vmware-player
+  273  vmware-installer -u VMware-Player
+  274  ls -ltr | grep VM
+  275  ls -ltr | grep -i vm
+  276  cd VMware-Player/
+  277  ls
+  278  ls -lah
+  279  cd ../vmstat 
+  280  cat ../vmstat 
+  281  cd ..
+  282  ls
+  283  ls -ltr | grep -i vm
+  284  rm -rf VMware-Player/
+  285  cd ..
+  286  ls
+  287  cd lib
+  288  ls
+  289  ls -ltr | grep -i vm
+  290  cd ..
+  291  cd bin/
+  292  ls -ltr | grep -i vm
+  293  ls
+  294  ls -ltr | grep -i vm
+  295  cat vmware-installer 
+  296  cd vmware-installer 
+  297  rm -rf vmware-installer 
+  298  ls -ltr | grep -i vm
+  299  s
+  300  ls
+  301  cd /home/ishmail/Downloads/
+  302  ls
+  303  cat install.sh 
+  304  exit
+  305  ls
+  306  cd Downloads/
+  307  ls
+  308  cd Ishmail/
+  309  ls
+  310  cd south/
+  311  ls
+  312  cd Tamil/
+  313  ls
+  314  cd ..
+  315  ls
+  316  cd ..
+  317  ls
+  318  mkdir Ishmail {North,West,East}
+  319  mkdir Ishmail/North,West,East
+  320  ls
+  321  cd Ishmail/
+  322  ls
+  323  cd ..
+  324  ls-lah
+  325  ls -lah
+  326  rm -rf Wire/ West/ North/ Nokia/ East/
+  327  ls
+  328  cd Ishmail/
+  329  ls
+  330  rm -f North,West,East/
+  331  rm -r North,West,East/
+  332  ls
+  333  rm -r south/
+  334  ls
+  335  cd ..
+  336  ls
+  337  mkdir Ishmail/{North, South, East, West}
+  338  ls
+  339  cd Ishmail/
+  340  ls
+  341  cd \{North\,/
+  342  ls
+  343  cd ..
+  344  ls
+  345  rm -r \{North\,/
+  346  ls
+  347  cd ..
+  348  ls
+  349  rm -r South,/ West}/ East,/ 
+  350  ls
+  351  mkdir -p Ishmail/{North East West South}
+  352  ls
+  353  rm -f East/ South}/ West/
+  354  rm -r East/ South}/ West/
+  355  ls
+  356  cd Ishmail/
+  357  ls
+  358  cd \{North/
+  359  ls
+  360  cd ..
+  361  rm -r \{North/
+  362  ls
+  363  cd ..
+  364  mkdir -p Ishmail/{North,South,East,West}
+  365  cd Ishmail/
+  366  ls
+  367  for i in {*}; do echo $i; done
+  368  for i in * ; do echo $i; done
+  369  for i in * ; do touch $i/$i.txt; done
+  370  ls
+  371  cd East/
+  372  ls
+  373  cd ..
+  374  tree
+  375  cd ..
+  376  tree
+  377  chmod +x install.sh 
+  378  tree
+  379  ls -lah
+  380  tree
+  381  tree -h
+  382  tree man
+  383  man tree
+  384  ls -lah
+  385  chmod 700 VMware-Workstation-Full-17.0.0-20800274.x86_64.bundle 
+  386  ls -lah
+  387  java
+  388  cd
+  389  ls -lah
+  390  cat .bashrc 
+  391  vim .bashrc 
+  392  l
+  393  ll
+  394  la
+  395  ls /usr/bin/ls /usr/bin/java
+  396  ls
+  397  cd /usr/bin/
+  398  ls
+  399  cd -
+  400  ls /usr/bin/java
+  401  cd /usr/bin/java
+  402  cd /usr/bin/
+  403  ls
+  404  ls -la
+  405  java ls java ls /usr/bin/java 
+  406  cd 
+  407  ls
+  408  ls -lah
+  409  cd .vmware/
+  410  ls
+  411  ls -lah
+  412  cd ..
+  413  ls
+  414  rm -r .vmware/
+  415  ls -lah
+  416  cat .sudo_as_admin_successful 
+  417  echo $printenv
+  418  $place
+  419  $uname
+  420  vim .bashrc 
+  421  apt install apache2
+  422  ssh
+  423  echo $HOME
+  424  cd /home/ishmail/
+  425  echo $HOME
+  426  echo $PATH
+  427  echo $HOSTNAME
+  428  echo $LANG
+  429  echo $BASH_VERSION
+  430  EXIT
+  431  exit
+  432  ls
+  433  cd Downloads/
+  434  ls
+  435  cd /media/ishmail/E
+  436  cd /media/ishmail/
+  437  ls
+  438  cd E/
+  439  ls
+  440  cd MNP/
+  441  ls
+  442  cd Linux/
+  443  ls
+  444  vlc Linux\ Full\ Course\ -edureka.mp4 
+  445  top
+  446  kill -9 500
+  447  top
+  448  firefox
+  449  microsoft-edge
+  450  exit
+  451  apt-get update
+  452  apt upgrade
+  453  apt --upgradable
+  454  apt list --upgradable
+  455  apt upgrade
+  456  apt update
+  457  apt-get install gnome-terminal
+  458  gsettings reset org.gnome.Terminal.Legacy.Settings 
+  459  init 6
+  460  apt list --upgradable
+  461  apt-get install gnome-initial-setup
+  462  apt-get install gnome-control-venter-data
+  463  apt-get install gnome-control-center-data
+  464  python3-
+  465  python3 -version
+  466  python -v
+  467  python version
+  468  python --version
+  469  apt list --upgradable
+  470  apt install jammy-updates
+  471  apt install snapd/jammy-updates
+  472  apt update
+  473  apt list --upgradable
+  474  apt update jammy
+  475  apt update jammy*
+  476  apt install jammy*
+  477  atp install alsa-ucm-conf
+  478  atp install alsa-ucm-conf/jammy-updaes
+  479  apt-get install gnome-control-center-faces
+  480  apt list --upgradable
+  481  apt-get install gnome-control-center
+  482  apt-get install grub-efi-amd64-bin
+  483  apt list --upgradable
+  484  apt-get install kbd
+  485  apt-get install alsa-ucm-conf
+  486  apt list --upgradable
+  487  apt-get install `apt list --upgradable`
+  488  apt list --upgradable
+  489  apt-get install libdrm-intel1
+  490  apt-get install libxatracker2
+  491  apt-get install libdrm-intel1
+  492  apt list --upgradable
+  493  apt-get install mesa-va-drivers
+  494  apt-get install mesa-vdpau-drivers
+  495  apt list --upgradable
+  496  apt-get upgrade
+  497  apt-get upgrade python3
+  498  apt-get upgrade python3-future
+  499  apt-get upgrade
+  500  apt-get install gnome-terminal
+  501  apt-get upgrade
+  502  apt-get upgrade python3
+  503  apt-get install gnome-terminal
+  504  su root
+  505  apt-get install gnome-terminal
+  506  apt update
+  507  apt list --upgradable
+  508  apt update
+  509  apt-get -f install
+  510  sudo apt-get install python3.6
+  511  sudo apt-get install software-properties-common
+  512  sudo add-apt-repository ppa:deadsnakes/ppa
+  513  sudo apt-get install python3.8
+  514  sudo apt-get install python3.6
+  515  python3 --version
+  516  python3
+  517  sudo apt --only-upgrade install python3
+  518  sudo apt autoremove
+  519  sudo apt --only-upgrade install python3
+  520  apt-get update
+  521  sudo apt update && sudo apt upgrade -y
+  522  python --version
+  523  sudo apt install python3
+  524  sudo apt install software-properties-common
+  525  sudo add-apt-repository ppa:deadsnakes/ppa
+  526  ls /usr/bin/python*
+  527  sudo apt-get remove python3
+  528  sudo apt-get remove --auto-remove python3
+  529  sudo apt-get purge python3
+  530  sudo apt-get purge --auto-remove python3
+  531  sudo apt-get update
+  532  sudo apt-get install python3
+  533  history
+  534  sudo apt install microsoft-edge-stable
+  535  mv /var/lib/dpkg/info /var/lib/dpkg/info_silent
+  536  mkdir /var/lib/dpkg/info
+  537  apt-get update
+  538  apt-get -f install
+  539  mv /var/lib/dpkg/info/* /var/lib/dpkg/info_silent/
+  540  rm -rf /var/lib/dpkg/info
+  541  mv /var/lib/dpkg/info_silent /var/lib/dpkg/info
+  542  apt-get update
+  543  sudo apt install microsoft-edge-stable
+  544  sudo apt-get install python3
+  545  history
+  546  ls
+  547  cd Downloads/
+  548  ls
+  549  cd Ishmail/
+  550  ls
+  551  history >> terminal.txt
